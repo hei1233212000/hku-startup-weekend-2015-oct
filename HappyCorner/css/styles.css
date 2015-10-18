@@ -1,0 +1,49 @@
+
+
+body {
+	background: #F9F7F3;
+}
+
+
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	min-width:400px;
+	max-width:400px;
+	height:100%;
+	background: #31475A;
+
+}
+.content {
+	margin-left:405px;
+	margin-top:5px;
+	margin-right:5px;
+	
+
+}
+
+.list-cell {
+	display: inline-block;
+	height:400px;
+	width:33%;
+	margin-top:10px;
+}
+.cell-content {
+	width:98%;
+	height:100%;
+	margin:auto;
+	border:1px solid #EEE;
+}
+
+.cell-content:hover {
+	border:1px solid #BBB;
+}
+.list-cell:hover {
+	
+}
+
+.list-cell img {
+	position:absolute;
+	clip: rect(0px,100%,200px,0px);
+}
