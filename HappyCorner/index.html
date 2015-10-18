@@ -7,6 +7,11 @@
 
 	<!-- Latest compiled and minified JavaScript -->
 
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css">
+
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.structure.min.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.theme.min.css">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 	<link rel="stylesheet" href="css/glyphicons.css">
@@ -20,32 +25,97 @@
 	<link rel="stylesheet" href="lib/bootstrap-3.3.5-dist/css/bootstrap-theme.min.css">
 
 	<!-- In <head> -->
-	<link href="lib/nouislider.min.css" rel="stylesheet">
-
+	
+    
+    <link rel="stylesheet" type="text/css" media="screen"
+     href="http://tarruda.github.com/bootstrap-datetimepicker/assets/css/bootstrap-datetimepicker.min.css">
 
 	</head>
 	<body>
 		<div class="header">
 			<div class="form">
-				
+			<div class="f">
+				<span>Location</span>
+				<div class="dropdown">
+				  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+				    Any
+				    <span class="caret"></span>
+				  </button>
+				  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+			
+
+<li><a href="#">Islands</a></li>
+<li><a href="#">Kwai Tsing</a></li>
+<li><a href="#">North</a></li>
+<li><a href="#">Sai Kung</a></li>
+<li><a href="#">Sha Tin</a></li>
+<li><a href="#">Tai Po</a></li>
+<li><a href="#">Tsuen Wan</a></li>
+<li><a href="#">Tuen Mun</a></li>
+<li><a href="#">Yuen Long</a></li>
+
+<li><a href="#">Kowloon City</a></li>
+<li><a href="#">Kwun Tong</a></li>
+<li><a href="#">Sham Shui Po</a></li>
+<li><a href="#">Wong Tai Sin</a></li>
+<li><a href="#">Yau Tsim Mong</a></li>
+<li><a href="#">Central & Western</a></li>
+<li><a href="#">Eastern</a></li>
+<li><a href="#">Southern</a></li>
+<li><a href="#">Wan Chai</a></li>
+				  </ul>
+				</div>
+			</div>
+			<div class="f">
+				<div>
+					<span>Date:</span>
+				</div>
+				<input type="text" id="datepicker">
+			</div>
+			<div class="f">
+				<div>
+				<span>Time: </span><input id="amount" type="text"/>
+				</div>
+				</div>
+				<div class="f">
+				<div id="slider-range"></div>
+			</div>
+			<script>
+			  $(function() {
+			    $( "#datepicker" ).datepicker();
+			  });
+ 			 </script>
+ 			   <script>
+			  $(function() {
+			    $( "#slider-range" ).slider({
+			      range: true,
+			      min: 0,
+			      max: 24,
+			      values: [ 16, 20 ],
+			      slide: function( event, ui ) {
+			        $( "#amount" ).val( "" + ui.values[ 0 ] + ":00 - " + ui.values[ 1 ] + ":00");
+			      }
+			    });
+			    $( "#amount" ).val( "" + $( "#slider-range" ).slider( "values", 0 ) +
+			      ":00 - " + $( "#slider-range" ).slider( "values", 1 ) + ":00");
+			  });
+			  </script>
+			  <div class="f">
+			  <div class="container">
 				<label class="checkbox-inline">
-				  <input type="checkbox" id="inlineCheckbox1" value="option1"> Wi-Fi
+				  <input type="checkbox" id="inlineCheckbox1" value="option1"> <span>Wi-Fi</span>
 				</label>
 				<label class="checkbox-inline">
-				  <input type="checkbox" id="inlineCheckbox1" value="option1"> Fan
-				</label>
-				<label class="checkbox-inline">
-				  <input type="checkbox" id="inlineCheckbox1" value="option1"> Air-conditioning
-				</label>
-				<label class="checkbox-inline">
-				  <input type="checkbox" id="inlineCheckbox1" value="option1"> Food
+				  <input type="checkbox" id="inlineCheckbox1" value="option1"> <span>Air-conditioning</span>
 				</label>
 			</div>
-			
+			</div>
+			</div>
 		</div>
 		<div class="content">
 		
 			<div class="container-fluid" data-bind="foreach: list" >
+				<!--ko if:true -->
 				<div class="list-cell col-xs-4 col-md-4 col-lg-4">
 					<div class="cell-content">
 						<div><img width="100%" src="img/600_434506686.jpg"/></div>
@@ -57,8 +127,8 @@
 							<!-- ko if: wifi -->
 							<span class="glyphicons glyphicons-wifi"></span>
 							<!-- /ko -->
-							<!-- ko if: food -->
-							<span class="glyphicons glyphicons-fast-food"></span>
+							<!-- ko if: ac -->
+							<span class="glyphicons glyphicons-snowflake"></span>
 							<!-- /ko -->
 						</div>
 						<div class="rating">
@@ -85,6 +155,7 @@
 						</div>
 					</div>
 				</div>
+				<!--/ko-->
 			</div>
 		
 		</div>
@@ -103,7 +174,7 @@
 		        <input class="form-control input-lg" type="text" placeholder="Last name">
 		        <input class="form-control input-lg" type="text" placeholder="Contact phone">
 		        <input class="form-control input-lg" type="text" placeholder="Event type">
-		        <input class="form-control input-lg" type="number" placeholder="No. of people">
+		        <input class="form-control input-lg" type="text" placeholder="No. of people">
 		        <input class="form-control input-lg" type="text" placeholder="Special Request">
 		      </div>
 		      <div class="modal-footer">
@@ -116,6 +187,8 @@
 		<!-- In <body> -->
 		<script src="lib/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
 		<script src="lib/nouislider.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="lib/moment.js"></script>
 		<script type='text/javascript' src='js/knockout.js'></script>
 		<script type='text/javascript' src='js/scripts.js'></script>
 

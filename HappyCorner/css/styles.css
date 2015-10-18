@@ -23,7 +23,16 @@ body {
 	
 
 }
+.f {
+	margin-top:10px;
+	margin-left:5px;
+	margin-right:5px;
 
+}
+.header span {
+	color: #fff;
+
+}
 .list-cell {
 	height:400px;
 	margin-top:5px;
@@ -95,7 +104,10 @@ body {
 }
 
 .form {
-	margin:10px;
+	margin:10pxs;
 
 }
-
+.dropdown .caret {
+	color: #000;
+}
+}

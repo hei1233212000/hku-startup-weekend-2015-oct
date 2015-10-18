@@ -9,88 +9,67 @@
 		list: [
 			{
 				district: "Mong Kok",
-				rating: 5,
+				rating: 2,
 				price: 1500,
-				fan: true,
-				ac: true,
-				wifi: false,
-				karaoke: false,
-				food: true,
-				recommend: true
+				ac: false,
+				wifi: false
 			},
 			{
-				district: "Tsim Sha Tsui",
-				rating: 4,
-				price: 199,
-				fan: true,
+				district: "Sheung Wan",
+				rating: 5,
+				price: 899,
 				wifi:true,
-				karaoke: true,
-				food: true,
-				recommend: true
+				ac: true
+				
 			},
 			{
 				district: "Central",
 				rating: 3,
 				price: 199,
-				karaoke: false,
-				food: false,
+				ac:true,
 				wifi:true
 			},
 			{
-				district: "Bertie",
+				district: "Wan Chai",
 				rating: 4,
 				price: 199,
-				karaoke: false,
-				food: false,
-				wifi:false
+				ac:true,
+				wifi:true
 			},
 			{
-				district: "Bertie",
+				district: "Central",
 				rating: 5,
 				price: 199,
-				karaoke: false,
-				wifi:false,
-				food: false	
+				ac:true,
+				wifi:true
 			},
 						{
 				district: "Tsim Sha Tsui",
 				rating: 4,
-				price: 199,
-				fan: true,
-				wifi:true,
-				karaoke: true,
-				food: true,
-				recommend: true
+				price: 300,
+				ac:true,
+				wifi:false
+			},
+			{
+				district: "Wan Chai",
+				rating: 5,
+				price: 499,
+				ac:true,
+				wifi:false
 			},
 			{
 				district: "Tsim Sha Tsui",
 				rating: 4,
 				price: 199,
-				fan: true,
-				wifi:true,
-				karaoke: true,
-				food: true,
-				recommend: true
+				ac:true,
+				wifi:true
 			},
 			{
 				district: "Tsim Sha Tsui",
 				rating: 4,
-				price: 199,
-				fan: true,
-				wifi:true,
-				karaoke: true,
-				food: true,
-				recommend: true
-			},
-			{
-				district: "Tsim Sha Tsui",
-				rating: 4,
-				price: 199,
-				fan: true,
-				wifi:true,
-				karaoke: true,
-				food: true,
-				recommend: true
+				price: 399,
+				ac:true,
+				wifi:true
 			}
 			]
 		
