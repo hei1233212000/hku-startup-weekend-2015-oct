@@ -64,7 +64,7 @@
 						<div class="container-fluid bottom ">
 								<div class="price col-xs-6 col-md-6 col-lg-6">Price: <span data-bind="text: price"></span></div>
 								
-								<button type="button" class="btn btn-primary action-button col-xs-6 col-md-6 col-lg-6">Book</button>
+								<button type="button" data-toggle="modal" data-target="#myModal" class="btn btn-primary action-button col-xs-6 col-md-6 col-lg-6">Book</button>
 							
 							
 						</div>
@@ -73,7 +73,31 @@
 			</div>
 		
 		</div>
-		
+		<!-- Modal -->
+		<div id="myModal" class="modal fade" role="dialog">
+		  <div class="modal-dialog">
+
+		    <!-- Modal content-->
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal">&times;</button>
+		        <h4 class="modal-title">Confirm Booking</h4>
+		      </div>
+		      <div class="modal-body">
+		        <input class="form-control input-lg" type="text" placeholder="First name">
+		        <input class="form-control input-lg" type="text" placeholder="Last name">
+		        <input class="form-control input-lg" type="text" placeholder="Contact phone">
+		        <input class="form-control input-lg" type="text" placeholder="Event type">
+		        <input class="form-control input-lg" type="number" placeholder="No. of people">
+		        <input class="form-control input-lg" type="text" placeholder="Special Request">
+		      </div>
+		      <div class="modal-footer">
+		      	<button type="button" class="btn btn-success" data-dismiss="modal">Confirm</button>
+		      </div>
+		    </div>
+
+		  </div>
+		</div>
 		<script type='text/javascript' src='js/knockout.js'></script>
 		<script type='text/javascript' src='js/scripts.js'></script>
 	</body>
