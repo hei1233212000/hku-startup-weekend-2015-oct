@@ -18,11 +18,29 @@
 
 	<!-- Optional theme -->
 	<link rel="stylesheet" href="lib/bootstrap-3.3.5-dist/css/bootstrap-theme.min.css">
-		<script src="lib/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+
+	<!-- In <head> -->
+	<link href="lib/nouislider.min.css" rel="stylesheet">
+
 
 	</head>
 	<body>
 		<div class="header">
+			<div class="form">
+				
+				<label class="checkbox-inline">
+				  <input type="checkbox" id="inlineCheckbox1" value="option1"> Wi-Fi
+				</label>
+				<label class="checkbox-inline">
+				  <input type="checkbox" id="inlineCheckbox1" value="option1"> Fan
+				</label>
+				<label class="checkbox-inline">
+				  <input type="checkbox" id="inlineCheckbox1" value="option1"> Air-conditioning
+				</label>
+				<label class="checkbox-inline">
+				  <input type="checkbox" id="inlineCheckbox1" value="option1"> Food
+				</label>
+			</div>
 			
 		</div>
 		<div class="content">
@@ -61,12 +79,9 @@
 							<span class="glyphicons glyphicons-star"></span>
 							<!-- /ko -->
 						</div>
-						<div class="container-fluid bottom ">
-								<div class="price col-xs-6 col-md-6 col-lg-6">Price: <span data-bind="text: price"></span></div>
-								
+						<div class="container-fluid bottom">
+								<div class="price col-xs-6 col-md-6 col-lg-6">Price:$<span data-bind="text: price"></span></div>
 								<button type="button" data-toggle="modal" data-target="#myModal" class="btn btn-primary action-button col-xs-6 col-md-6 col-lg-6">Book</button>
-							
-							
 						</div>
 					</div>
 				</div>
@@ -98,7 +113,11 @@
 
 		  </div>
 		</div>
+		<!-- In <body> -->
+		<script src="lib/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+		<script src="lib/nouislider.min.js"></script>
 		<script type='text/javascript' src='js/knockout.js'></script>
 		<script type='text/javascript' src='js/scripts.js'></script>
+
 	</body>
 </html>
