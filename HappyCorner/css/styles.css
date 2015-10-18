@@ -34,6 +34,8 @@ body {
 	height:100%;
 	margin:auto;
 	border:1px solid #EEE;
+	position:relative;
+	border-radius:3px;
 }
 
 .cell-content:hover {
@@ -44,6 +46,43 @@ body {
 }
 
 .list-cell img {
+	border-radius:3px 3px 0 0;
 	position:absolute;
 	clip: rect(0px,100%,200px,0px);
 }
+
+.list-cell .bottom {
+	position:absolute;
+	bottom:0;
+	width:100%;
+	float:left;
+
+}
+
+.list-cell .bottom .price{
+	display:none;
+	position:relative;
+	min-width: 50%;
+	width:50%;
+}
+.title {
+	padding:10px;
+	font-size: 18px;
+	font-weight:bold;
+
+}
+.list-cell .bottom .con {
+	position:relative;
+	width:100%;
+	
+
+}
+.list-cell .bottom .action-button {
+	position:absolute;
+	right:0px;
+	bottom:0px;
+
+
+}
+
+
