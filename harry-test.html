@@ -1,28 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <title>Title of the document</title>
+    <script>
+        function startTime() {
+            var today = new Date();
+            var h = today.getHours();
+            var m = today.getMinutes();
+            var s = today.getSeconds();
+            m = checkTime(m);
+            s = checkTime(s);
+            document.getElementById('txt').innerHTML = h + ":" + m + ":" + s;
+            var t = setTimeout(startTime, 500);
+        }
+        function checkTime(i) {
+            if (i < 10) {i = "0" + i}  // add zero in front of numbers < 10
+            return i;
+        }
+    </script>
 </head>
 
-<body>
-<a href="index.html#/iframe-test">Back</a>
-<div style="overflow-y:auto; height: 100px">
-    <div>Test</div>
-    <div>Test</div>
-    <div>Test</div>
-    <div>Test</div>
-    <div>Test</div>
-    <div>Test</div>
-    <div>Test</div>
-    <div>Test</div>
-    <div>Test</div>
-    <div>Test</div><div>Test</div>
-    <div>Test</div>
-    <div>Test</div>
-    <div>Test</div>
-    <div>Test</div>
-</div>
-</body>
+<body onload="startTime()">
+<div id="txt"></div>
 
+</body>
 </html>
