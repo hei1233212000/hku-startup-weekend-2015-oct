@@ -24,19 +24,29 @@
 				fan: true,
 				wifi:true,
 				karaoke: true,
+				food: true,
 				recommend: true
 			},
 			{
 				district: "Central",
-				rating: 3
+				rating: 3,
+				karaoke: false,
+				food: false,
+				wifi:true
 			},
 			{
 				district: "Bertie",
-				rating: 4
+				rating: 4,
+				karaoke: false,
+				food: false,
+				wifi:false
 			},
 			{
 				district: "Bertie",
-				rating: 5
+				rating: 5,
+				karaoke: false,
+				wifi:false,
+				food: false
 			}
 			]
 		

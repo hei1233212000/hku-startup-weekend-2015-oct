@@ -9,6 +9,7 @@
 	<script src="lib/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" href="css/glyphicons.css">
 	<script type='text/javascript' src='js/jquery-1.11.3.min.js'></script>
 
 				<!-- Latest compiled and minified CSS -->
@@ -31,7 +32,14 @@
 						<div class="title">
 							<span data-bind="text: district"></span>
 						</div>
-						<div class="features"></div>
+						<div class="features">
+							<!-- ko if: wifi -->
+							<span class="glyphicons glyphicons-wifi"></span>
+							<!-- /ko -->
+							<!-- ko if: food -->
+							<span class="glyphicons glyphicons-fast-food"></span>
+							<!-- /ko -->
+						</div>
 						<div class="rating"></div>
 						<div class="bottom">
 							<div class="con">
