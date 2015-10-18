@@ -6,17 +6,19 @@
 	
 
 	<!-- Latest compiled and minified JavaScript -->
-	<script src="lib/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 	<link rel="stylesheet" href="css/glyphicons.css">
 	<script type='text/javascript' src='js/jquery-1.11.3.min.js'></script>
+
 
 				<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="lib/bootstrap-3.3.5-dist/css/bootstrap.min.css">
 
 	<!-- Optional theme -->
 	<link rel="stylesheet" href="lib/bootstrap-3.3.5-dist/css/bootstrap-theme.min.css">
+		<script src="lib/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
 
 	</head>
 	<body>
@@ -25,14 +27,15 @@
 		</div>
 		<div class="content">
 		
-			<div data-bind="foreach: list">
-				<div class="list-cell">
+			<div class="container-fluid" data-bind="foreach: list" >
+				<div class="list-cell col-xs-4 col-md-4 col-lg-4">
 					<div class="cell-content">
 						<div><img width="100%" src="img/600_434506686.jpg"/></div>
 						<div class="title">
 							<span data-bind="text: district"></span>
 						</div>
 						<div class="features">
+							<div>Features:</div>
 							<!-- ko if: wifi -->
 							<span class="glyphicons glyphicons-wifi"></span>
 							<!-- /ko -->
@@ -40,14 +43,30 @@
 							<span class="glyphicons glyphicons-fast-food"></span>
 							<!-- /ko -->
 						</div>
-						<div class="rating"></div>
-						<div class="bottom">
-							<div class="con">
-								<div class="price">$100</div>
-								<div class="action-button">
-									<button type="button" class="btn btn-primary">Primary</button>
-								</div>
-							</div>
+						<div class="rating">
+							<div>Rating:</div>
+							<!-- ko if: rating > 4 -->
+							<span class="glyphicons glyphicons-star"></span>
+							<!-- /ko -->
+							<!-- ko if: rating > 3 -->
+							<span class="glyphicons glyphicons-star"></span>
+							<!-- /ko -->
+							<!-- ko if: rating > 2 -->
+							<span class="glyphicons glyphicons-star"></span>
+							<!-- /ko -->
+							<!-- ko if: rating > 1 -->
+							<span class="glyphicons glyphicons-star"></span>
+							<!-- /ko -->
+							<!-- ko if: rating > 0 -->
+							<span class="glyphicons glyphicons-star"></span>
+							<!-- /ko -->
+						</div>
+						<div class="container-fluid bottom ">
+								<div class="price col-xs-6 col-md-6 col-lg-6">Price: <span data-bind="text: price"></span></div>
+								
+								<button type="button" class="btn btn-primary action-button col-xs-6 col-md-6 col-lg-6">Book</button>
+							
+							
 						</div>
 					</div>
 				</div>

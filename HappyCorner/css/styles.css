@@ -2,6 +2,7 @@
 
 body {
 	background: #F9F7F3;
+	color: #31475A;
 }
 
 
@@ -24,14 +25,17 @@ body {
 }
 
 .list-cell {
-	display: inline-block;
 	height:400px;
-	width:33%;
+	margin-top:5px;
+
+
 }
 .cell-content {
-	width:98%;
+	width:100%;
 	height:100%;
-	margin:auto;
+		padding-top:200px;
+	padding-left:10px;
+	padding-right:10px;
 	border:1px solid #EEE;
 	position:relative;
 	border-radius:3px;
@@ -47,22 +51,24 @@ body {
 .list-cell img {
 	border-radius:3px 3px 0 0;
 	height:200px;
-
+	position:absolute;
+	left:0;
+	right:0;
+	top:0;
 }
 
 .list-cell .bottom {
 	position:absolute;
-	bottom:0;
+	bottom:5px;
 	width:100%;
 	float:left;
 
 }
 
 .list-cell .bottom .price{
-	display:none;
-	position:relative;
-	min-width: 50%;
-	width:50%;
+	font-size:14px;
+	margin-top:4px;
+	color: 	#802424;
 }
 .title {
 	padding:10px;
@@ -70,22 +76,22 @@ body {
 	font-weight:bold;
 
 }
-.list-cell .bottom .con {
-	position:relative;
-	width:100%;
-	
-
-}
-.list-cell .bottom .action-button {
+.list-cell .bottom {
 	position:absolute;
-	right:0px;
-	bottom:0px;
-
+	width:100%;
+	margin-left:-10px;
 
 }
+
 .features {
 	min-height:50px;
 	height:50px;
+}
+.rating .glyphicons-star
+{
+	color:#F2BB16;
+	font-size:24px;
+
 }
 
 

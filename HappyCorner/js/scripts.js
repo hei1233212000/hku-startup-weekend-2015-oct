@@ -9,7 +9,7 @@
 			{
 				district: "Mong Kok",
 				rating: 5,
-				price: 150,
+				price: 1500,
 				fan: true,
 				ac: true,
 				wifi: false,
@@ -20,7 +20,7 @@
 			{
 				district: "Tsim Sha Tsui",
 				rating: 4,
-				price: 100,
+				price: 199,
 				fan: true,
 				wifi:true,
 				karaoke: true,
@@ -30,6 +30,7 @@
 			{
 				district: "Central",
 				rating: 3,
+				price: 199,
 				karaoke: false,
 				food: false,
 				wifi:true
@@ -37,6 +38,7 @@
 			{
 				district: "Bertie",
 				rating: 4,
+				price: 199,
 				karaoke: false,
 				food: false,
 				wifi:false
@@ -44,9 +46,50 @@
 			{
 				district: "Bertie",
 				rating: 5,
+				price: 199,
 				karaoke: false,
 				wifi:false,
-				food: false
+				food: false	
+			},
+						{
+				district: "Tsim Sha Tsui",
+				rating: 4,
+				price: 199,
+				fan: true,
+				wifi:true,
+				karaoke: true,
+				food: true,
+				recommend: true
+			},
+						{
+				district: "Tsim Sha Tsui",
+				rating: 4,
+				price: 199,
+				fan: true,
+				wifi:true,
+				karaoke: true,
+				food: true,
+				recommend: true
+			},
+						{
+				district: "Tsim Sha Tsui",
+				rating: 4,
+				price: 199,
+				fan: true,
+				wifi:true,
+				karaoke: true,
+				food: true,
+				recommend: true
+			},
+						{
+				district: "Tsim Sha Tsui",
+				rating: 4,
+				price: 199,
+				fan: true,
+				wifi:true,
+				karaoke: true,
+				food: true,
+				recommend: true
 			}
 			]
 		
