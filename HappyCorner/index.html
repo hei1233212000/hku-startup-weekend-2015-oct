@@ -3,17 +3,19 @@
 		<title>Happy Corner</title>
 
 
-			<!-- Latest compiled and minified CSS -->
+	
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="lib/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<script type='text/javascript' src='js/jquery-1.11.3.min.js'></script>
+
+				<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="lib/bootstrap-3.3.5-dist/css/bootstrap.min.css">
 
 	<!-- Optional theme -->
 	<link rel="stylesheet" href="lib/bootstrap-3.3.5-dist/css/bootstrap-theme.min.css">
-
-	<!-- Latest compiled and minified JavaScript -->
-	<script src="lib/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
-		<link rel="stylesheet" type="text/css" href="css/normalize.css">
-		<link rel="stylesheet" type="text/css" href="css/styles.css">
-		<script type='text/javascript' src='js/jquery-1.11.3.min.js'></script>
 
 	</head>
 	<body>
@@ -27,8 +29,10 @@
 					<div class="cell-content">
 						<div><img width="100%" src="img/600_434506686.jpg"/></div>
 						<div class="title">
-							<span>Something Something</span>
+							<span data-bind="text: district"></span>
 						</div>
+						<div class="features"></div>
+						<div class="rating"></div>
 						<div class="bottom">
 							<div class="con">
 								<div class="price">$100</div>

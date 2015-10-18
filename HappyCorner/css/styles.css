@@ -47,8 +47,8 @@ body {
 
 .list-cell img {
 	border-radius:3px 3px 0 0;
-	position:absolute;
-	clip: rect(0px,100%,200px,0px);
+
+
 }
 
 .list-cell .bottom {
